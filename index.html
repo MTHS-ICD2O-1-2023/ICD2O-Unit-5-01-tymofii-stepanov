@@ -12,7 +12,7 @@
   <link rel="manifest" href="site.webmanifest" />
   <title>The Guess a Number program</title>
 </head>
-<body>
+<body onload="initialize()">
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <script src="./js/script.js"></script>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -31,7 +31,7 @@
         <!-- Numeric Textfield -->
         <div class="mdl-textfield mdl-js-textfield">
           <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="user-number">
-          <label class="mdl-textfield__label" for="user-number">Street Number here ...</label>
+          <label class="mdl-textfield__label" for="user-number">...</label>
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
         <br />
@@ -43,7 +43,7 @@
       </form>
       <br />
       <div class="page-content-answer">
-        <div id="user-info"></div>
+        <div id="result"></div>
       </div>
     </main>
   </div>
